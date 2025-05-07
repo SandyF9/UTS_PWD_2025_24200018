@@ -1,0 +1,66 @@
+:root {
+    --black-soft: #2d2d2d;
+    --black-blue: #0046be;
+    --light-gray: #6c757d;
+    --dark-gray: #f6f8fb;
+  }
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+ body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align:center;
+}
+
+ header {
+    background:var(--light-gray);
+    padding: 60px 20px;
+    text-align:center;
+}
+
+div {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+section p {
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+ header img {
+    width:260px;
+    height:120px;
+    animation:bouce 2s;
+ }
+
+ .btn_primary {
+    background:var(--black-blue);
+    color:white;
+    padding: 12px 30px;
+    border:none;
+    border-top-left-radius: 12px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:transform 2.3s ease;
+ }
+
+ @keyframes bounce {
+ 40% {
+    transform:translateY(-30px);
+ }
+ 60% {
+    transform:translateY(-10px);
+ }
+}
+
+ .btn-primary:hover {
+    color: #00a6ff;
+    transform:translateY(-5px);
+ }
